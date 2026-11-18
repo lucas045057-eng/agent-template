@@ -127,7 +127,7 @@ function main(argv) {
       if (!runVerification(item)) failed.push(item.id);
     }
     if (failed.length) {
-      console.error(`passing 项复核失败：${failed.join("、")}。这些功能已经不满足验证命令，修复后重新 verify，或把状态退回 active。`);
+      console.error(`passing 项复核失败：${failed.join("、")}。这些功能已经不满足验证命令，请修复实现使其重新通过验证（禁止擅自降级或删除已有 passing 项）。`);
       return 1;
     }
     console.log(`[recheck] ${passing.length} 个 passing 项全部复核通过`);

@@ -1,5 +1,6 @@
 {
     "repo":  "lucas045057-eng/agent-template",
+    "admin_merge": [],
     "internal":  [
                      "PROJECT.md",
                      "PROGRESS.md",
@@ -25,7 +26,7 @@
                              ],
                    "command":  [
                                    "node",
-                                   "/home/agent/.agent-autoloop/secretary-tools/pi-review.mjs",
+                                   "/home/agent/.agent-autoloop/secretary-tools/codex-review.mjs",
                                    "{input}"
                                ]
                },
